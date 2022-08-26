@@ -9,7 +9,6 @@ function Menu(config){
     var _this = this;
     
     this.btn.removeAttribute('style')
-    //closeMenu()
     
     if(this.maxWidth){
         window.addEventListener('resize', e => {

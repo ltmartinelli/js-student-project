@@ -51,7 +51,10 @@ img {
 .js .header{
     position: fixed;
     width:100%;
+    z-index: 10;
 }
+
+
 
 .logo-text {
     text-transform: uppercase;
@@ -116,6 +119,91 @@ img {
     transition: max-height .7s;
     
 }
+
+
+.js .slider-container{
+    overflow: hidden;
+    color: white;
+}
+
+.js .slider-container .slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+.js .slider-container figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.js .slider-container figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .slider-container .prev, .js .slider-container .next{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .slider-container .prev{
+    left: 10px;
+}
+.js .slider-container .next{
+    right: 10px;
+}
+
+
+
+
+
+.js .quote-slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+.js .quote-slider figure h2{
+    margin-top: 0;
+}
+
+.js .quote-slider figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.js .quote-slider figure.show{
+    opacity: 1;
+    position: static;
+}
+.js .quote-slider .prev, .js .quote-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .quote-slider .prev{
+    left: 10px;
+}
+.js .quote-slider .next{
+    right: 10px;
+}
+
+
 
 
 .hero {
